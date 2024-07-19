@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Calculator</title>
+</head>
+<body>
+   
+
+    <script>
+        let basicSalary = 50000; 
+        let hra = 20000;       
+        let otherAllowances = 10000;
+
+      
+        function calculateMonthlySalary(basic, hra, other) {
+            return basic + hra + other;
+        }
+
+        function calculateAnnualSalary(monthlySalary) {
+            return monthlySalary * 12;
+        }
+
+        let monthlySalary = calculateMonthlySalary(basicSalary, hra, otherAllowances);
+        let annualSalary = calculateAnnualSalary(monthlySalary);
+
+        
+        console.log("Monthly Salary: " + monthlySalary);
+        console.log("Annual Salary: " + annualSalary);
+
+    </script>
+</body>
+</html>
